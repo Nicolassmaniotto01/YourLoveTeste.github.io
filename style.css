@@ -1,0 +1,96 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+
+.container
+{
+    margin: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.BOX
+{
+    margin: 1vw;
+    padding: 0.1vw;
+    width: 50vw;
+    background-color: blueviolet;
+}
+
+.BOX header
+{
+    padding: 1vw;
+    margin: 1vw;
+    display: flex;
+    background-color: yellow;
+    justify-content: center;
+}
+.BOX header h1
+{
+    font-size: 2vw;
+}
+
+.BOX .section
+{
+    display: flex;
+    margin: 1vw;
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.BOX .section .coracao
+{
+    display: flex;
+    padding: 1vw;
+    margin: 1vw;
+    width: 40vw;
+    background-color: bisque;
+    justify-content: center;
+    align-items: center;
+}
+
+.BOX .section .coracao img
+{
+    width: 20vw;
+}
+
+.BOX .section .coracao h1
+{
+    font-size: 3vw;
+    position: absolute;
+    color: white;
+}
+
+
+.BOX .footer
+{
+    display: flex;
+    margin: 1vw;
+    padding: 1vw;
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+}
+
+.BOX .footer .bts
+{
+    padding: 0.2vw;
+    background-color: yellowgreen;
+}
+
+.BOX .footer .bts button
+{
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    width: 10vw;
+    margin: 1vw;
+}
