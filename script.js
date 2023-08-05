@@ -48,7 +48,7 @@ else
 function Perguntas()
 {
     if (btnA.addEventListener("Click", pressA)) {
-        Quests =  ;
+        Quests =  1;
     }
 }
 
