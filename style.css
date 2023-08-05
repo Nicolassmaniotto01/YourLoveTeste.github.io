@@ -1,96 +1,153 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
-
-
-.container
-{
+.container {
     margin: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    background-color: #fdeff3; /* Rosa claro suave */
 }
 
-.BOX
-{
+.BOX {
     margin: 1vw;
-    padding: 0.1vw;
+    padding: 1vw;
     width: 50vw;
-    background-color: blueviolet;
+    background-color: #ff97b3; /* Rosa mais intenso */
 }
 
-.BOX header
-{
+.BOX header {
     padding: 1vw;
     margin: 1vw;
     display: flex;
-    background-color: yellow;
+    background-color: #ff6382; /* Rosa mais suave */
     justify-content: center;
 }
-.BOX header h1
-{
+
+.BOX header h1 {
     font-size: 2vw;
+    color: #FFFFFF; /* Cinza escuro */
 }
 
-.BOX .section
-{
+.BOX .section {
     display: flex;
     margin: 1vw;
-    background-color: yellow;
+    background-color: #ff6382; /* Rosa mais suave */
     justify-content: center;
     align-items: center;
 }
 
-
-.BOX .section .coracao
-{
+.BOX .section .coracao {
     display: flex;
     padding: 1vw;
     margin: 1vw;
     width: 40vw;
-    background-color: bisque;
+    background-color: #ff97b3; /* Rosa mais intenso */
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-.BOX .section .coracao img
-{
-    width: 20vw;
+.BOX .section .coracao img {
+    width: 100%;
+    max-width: 20vw;
 }
 
-.BOX .section .coracao h1
-{
-    font-size: 3vw;
+.BOX .section .coracao h1 {
+    font-size: 2.5vw;
+    color: #FFFFFF; 
     position: absolute;
-    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-
-.BOX .footer
-{
+.BOX .footer {
     display: flex;
     margin: 1vw;
     padding: 1vw;
-    background-color: yellow;
+    background-color: #ff6382; /* Rosa mais suave */
     justify-content: center;
     align-items: center;
 }
 
-.BOX .footer .bts
-{
-    padding: 0.2vw;
-    background-color: yellowgreen;
+.BOX .footer .bts {
+    padding: 0.5vw;
+    background-color: #ff97b3; /* Rosa mais intenso */
 }
 
-.BOX .footer .bts button
-{
+#Start {
+    position: absolute;
     font-size: 1.5vw;
-    padding: 0.5vw;
-    width: 10vw;
-    margin: 1vw;
+    padding: 0.5vw 1vw;
+    min-width: 10vw;
+    margin: 0.5vw;
+    color: white;
+    border: none;
+    background-color: #ff6382; /* Rosa mais suave */
+    cursor: pointer;
+}
+
+.BOX .footer .bts button {
+    font-size: 1.5vw;
+    padding: 0.5vw 1vw;
+    min-width: 10vw;
+    margin: 0.5vw;
+    color: white;
+    border: none;
+    background-color: #ff6382; /* Rosa mais suave */
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .BOX {
+        width: 90vw;
+    }
+
+    .BOX header h1 {
+        font-size: 5vw;
+    }
+
+    .BOX .section .coracao {
+        width: 70vw;
+    }
+
+    .BOX .section .coracao h1 {
+        font-size: 4vw;
+    }
+
+    .BOX .footer .bts button {
+        font-size: 3vw;
+        padding: 1vw 2vw;
+        min-width: 15vw;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .BOX {
+        width: 70vw;
+    }
+
+    .BOX header h1 {
+        font-size: 3vw;
+    }
+
+    .BOX .section .coracao {
+        width: 50vw;
+    }
+
+    .BOX .section .coracao h1 {
+        font-size: 3vw;
+    }
+
+    .BOX .footer .bts button {
+        font-size: 1.8vw;
+        padding: 0.5vw 1vw;
+        min-width: 8vw;
+    }
 }
