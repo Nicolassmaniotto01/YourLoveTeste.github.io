@@ -51,6 +51,8 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    text-shadow: -1px 0px 0.5px rgba(0, 0, 0);
+
 }
 
 .BOX .section .coracao img {
