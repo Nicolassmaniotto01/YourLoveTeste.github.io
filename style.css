@@ -9,33 +9,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fdeff3; /* Rosa claro suave */
 }
 
 .BOX {
     margin: 1vw;
     padding: 1vw;
     width: 50vw;
-    background-color: #ff97b3; /* Rosa mais intenso */
+    background-color: #FFF; /* Rosa mais intenso */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .BOX header {
     padding: 1vw;
     margin: 1vw;
     display: flex;
-    background-color: #ff6382; /* Rosa mais suave */
+    background-color: #FFF; /* Rosa mais suave */
     justify-content: center;
 }
 
 .BOX header h1 {
-    font-size: 2vw;
-    color: #FFFFFF; /* Cinza escuro */
+    font-size: 3vw;
+    color: pink;
+    text-shadow: -1px 0px 0.5px rgba(0, 0, 0);
 }
 
 .BOX .section {
     display: flex;
+    flex-direction: column; /* Change to vertical layout for mobile */
     margin: 1vw;
-    background-color: #ff6382; /* Rosa mais suave */
+    background-color: #FFF; /* Rosa mais suave */
     justify-content: center;
     align-items: center;
 }
@@ -45,38 +47,64 @@
     padding: 1vw;
     margin: 1vw;
     width: 40vw;
-    background-color: #ff97b3; /* Rosa mais intenso */
+    background-color: #FFF;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
 .BOX .section .coracao img {
+    content: "";
     width: 100%;
     max-width: 20vw;
+    overflow: hidden;
+    animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.8);
+    }
 }
 
 .BOX .section .coracao h1 {
     font-size: 2.5vw;
-    color: #FFFFFF; 
+    color: #FFFFFF;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+.BOX .Quests {
+    display: flex;
+    margin: 1vw;
+    padding: 1vw;
+    background-color: #FFF; /* Rosa mais suave */
+    justify-content: center;
+    align-items: center;
+    color: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
 .BOX .footer {
     display: flex;
     margin: 1vw;
     padding: 1vw;
-    background-color: #ff6382; /* Rosa mais suave */
+    background-color: #FFF; /* Rosa mais suave */
     justify-content: center;
     align-items: center;
 }
 
 .BOX .footer .bts {
     padding: 0.5vw;
-    background-color: #ff97b3; /* Rosa mais intenso */
+    background-color: #FFF; /* Rosa mais intenso */
 }
 
 #Start {
@@ -85,9 +113,9 @@
     padding: 0.5vw 1vw;
     min-width: 10vw;
     margin: 0.5vw;
-    color: white;
+    color: black;
     border: none;
-    background-color: #ff6382; /* Rosa mais suave */
+    background-color: #FFF; /* Rosa mais suave */
     cursor: pointer;
 }
 
@@ -96,14 +124,14 @@
     padding: 0.5vw 1vw;
     min-width: 10vw;
     margin: 0.5vw;
-    color: white;
+    color: black;
     border: none;
-    background-color: #ff6382; /* Rosa mais suave */
+    background-color: #FFF; /* Rosa mais suave */
     cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-
-
+/* Mobile View */
 @media screen and (max-width: 600px) {
     .BOX {
         width: 90vw;
@@ -121,6 +149,12 @@
         font-size: 4vw;
     }
 
+    .BOX .Quests {
+        font-size: 1.1vw;
+        padding: 1vw 2vw;
+        min-width: 15vw;
+    }
+
     .BOX .footer .bts button {
         font-size: 3vw;
         padding: 1vw 2vw;
@@ -128,6 +162,7 @@
     }
 }
 
+/* Tablet View */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     .BOX {
         width: 70vw;
@@ -143,6 +178,12 @@
 
     .BOX .section .coracao h1 {
         font-size: 3vw;
+    }
+
+    .BOX .Quests {
+        font-size: 1.1vw;
+        padding: 0.5vw 1vw;
+        min-width: 8vw;
     }
 
     .BOX .footer .bts button {
