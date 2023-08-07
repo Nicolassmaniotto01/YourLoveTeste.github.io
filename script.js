@@ -11,8 +11,8 @@ const Foo = document.querySelector(".footer");
 
 const task = document.querySelector("#Perguntas"); 
 var cond = Boolean;
-var HearInteiro = "imagens/coracao.png";
-var HearPartido = "imagens/coracaopartido.png";
+var HearInteiro = "coracao.png";
+var HearPartido = "coracaopartido.png";
 
 var Quests;
 
@@ -145,7 +145,7 @@ function handleAnswer(answer) {
 
         task.innerHTML = "Triste Romance!";
     }
-    if (Por == 100)
+    if (Por >= 100)
     {
         Foo.style.visibility = 'hidden';
         Foo.style.position = 'absolute';
@@ -158,7 +158,6 @@ function handleAnswer(answer) {
 
 btnA.addEventListener('click', () => handleAnswer('Sim'));
 btnB.addEventListener('click', () => handleAnswer('Não'));
-
 
 
 

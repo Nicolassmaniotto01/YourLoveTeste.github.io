@@ -56,7 +56,6 @@
 }
 
 .BOX .section .coracao img {
-    content: "";
     width: 100%;
     max-width: 20vw;
     overflow: hidden;
@@ -133,7 +132,7 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Mobile View */
+
 @media screen and (max-width: 600px) {
     .BOX {
         width: 90vw;
@@ -142,7 +141,7 @@
     .BOX header h1 {
         font-size: 5vw;
     }
-
+    
     .BOX .section .coracao {
         width: 70vw;
     }
@@ -173,10 +172,11 @@
     .BOX header h1 {
         font-size: 3vw;
     }
-
+    
     .BOX .section .coracao {
         width: 50vw;
     }
+    
 
     .BOX .section .coracao h1 {
         font-size: 3vw;
