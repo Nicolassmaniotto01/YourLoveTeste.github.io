@@ -56,7 +56,6 @@
 }
 
 .BOX .section .coracao img {
-    content: "";
     width: 100%;
     max-width: 20vw;
     overflow: hidden;
