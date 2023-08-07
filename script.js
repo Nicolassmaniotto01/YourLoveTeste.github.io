@@ -145,7 +145,7 @@ function handleAnswer(answer) {
 
         task.innerHTML = "Triste Romance!";
     }
-    if (Por == 100)
+    if (Por >= 100)
     {
         Foo.style.visibility = 'hidden';
         Foo.style.position = 'absolute';
