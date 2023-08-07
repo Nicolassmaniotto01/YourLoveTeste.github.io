@@ -11,8 +11,8 @@ const Foo = document.querySelector(".footer");
 
 const task = document.querySelector("#Perguntas"); 
 var cond = Boolean;
-var HearInteiro = "https://github.com/Nicolassmaniotto01/YourLoveTeste.github.io/blob/dff20a89adb69b8192c50512d3b6c2bafba34522/imagens/coracao.png";
-var HearPartido = "https://github.com/Nicolassmaniotto01/YourLoveTeste.github.io/blob/dff20a89adb69b8192c50512d3b6c2bafba34522/imagens/coracaopartido.png";
+var HearInteiro = "coracao.png";
+var HearPartido = "coracaopartido.png";
 
 var Quests;
 
